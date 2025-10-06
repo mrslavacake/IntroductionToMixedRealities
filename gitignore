@@ -67,3 +67,14 @@ crashlytics-build.properties
 *.sln
 *.user
 
+
+# Ignore Vuforia package caches and binaries
+Library/PackageCache/
+Library/ArtifactDB
+Packages/com.ptc.vuforia.engine-*.tgz
+
+# Ignore OS-specific binaries
+*.dll
+*.dylib
+*.so
+
