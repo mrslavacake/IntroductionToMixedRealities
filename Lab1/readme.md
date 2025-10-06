@@ -5,6 +5,6 @@ Augmented Reality demo built in Unity 2022 using Vuforia, featuring two characte
 
 Ghost: Idle and Attack animations controlled via isAttacking bool.
 
-Adventurer: Idle_Normal, Attack01/Attack02 loop, Idle_Battle, returning to Idle_Normal after 4–5 seconds.
+Adventurer: Idle_Normal, Attack01/Attack02 loop, Idle_Battle, returning to Idle_Normal after 3 seconds.
 
 Distance-based interaction between Image Targets triggers character behavior.
