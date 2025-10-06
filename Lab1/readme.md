@@ -8,3 +8,5 @@ Ghost: Idle and Attack animations controlled via isAttacking bool.
 Adventurer: Idle_Normal, Attack01/Attack02 loop, Idle_Battle, returning to Idle_Normal after 3 seconds.
 
 Distance-based interaction between Image Targets triggers character behavior.
+
+# Video demo is named IMR_Tema1.mp4
