@@ -16,6 +16,10 @@ Cumulative Score Display: Score is tracked cumulatively, showing the total and t
 
 # Video demo is called Homework2 (demo).mp4
 
-# Scoring!!!
+# Changed Scoring Logic!!!
 
-The scoring has been changed to depend on the dart's proximity to the target center instead of the distance from the target. (I have included the script for player distance scoring in Assets/Scripts/TargetScoreOld.cs, but I have not used it in the actual project since I believed it made no sense in the context of Darts)
+The initial project concept included scoring based on the player's distance from the target. However, I deemed this logic irrelevant and nonsensical in the context of a Darts game, where the challenge should focus on accuracy rather than distance from a static spawning point.
+
+Therefore, the score calculation was fundamentally redesigned to rely solely on the dart's proximity to the target center upon impact, mirroring real-world darts scoring.
+
+(The original script logic, which calculated score based on player distance, has been preserved in Assets/Scripts/TargetScoreOld.cs for historical context, but it is not used in the final build.)
