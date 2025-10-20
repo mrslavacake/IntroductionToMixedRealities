@@ -15,6 +15,9 @@ The solution is integrated into the existing `Lab2` folder, which contains the n
 * The hand model consists of 5 fingers and a basic palm structure.
 * **Rigging:** The `.blend` file includes a basic armature (rig) to facilitate future animation, though animations have not been implemented yet.
 
+* <img width="697" height="778" alt="image" src="https://github.com/user-attachments/assets/8eb462bc-1e17-4cab-a4de-f00b66a0858e" />
+
+
 # Texturing Process
 1.  A seamless base texture (tileable) was chosen and scaled up.
 2.  The base texture was imported into **Medibang Paint** for detailed painting.
