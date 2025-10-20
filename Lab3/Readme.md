@@ -1,25 +1,31 @@
-# VR Darts Experience: XR Interaction Toolkit Demo
+# 3D Hand Modeling and XR Integration
 
-This repository contains a simple, physics-based VR darts game built in Unity 2022 using the OpenXR and XR Interaction Toolkit (XRIT) packages. The primary goal of this project was to implement core XR mechanics, specifically simulated hand presence, grab/select functionality, physics-based throwing, and a dynamic scoring system that uses the XR Device Simulator for non-VR development.
+This repository focuses on creating a custom 3D hand model and integrating it with the Unity XR Toolkit for use as player controllers. The main goal was to utilize a 3D modeling tool (Blender) to create a five-fingered hand model and integrate it into a pre-configured Unity XR scene, serving as the visual representation for both the left and right hand controllers.
 
-# Features
+# Project Structure & Tools
+The solution is integrated into the existing `Lab2` folder, which contains the necessary Unity XR setup.
 
-Physics-Based Throwing: Darts can be grabbed, thrown, and embedded into the target using realistic physics.
+# Software Used
+* **3D Modeling & Rigging:** Blender (v4.4.3)
+* **Texturing:** Medibang Paint (for customization and detailing)
+* **Game Engine:** Unity (v2022.x LTS)
+* **XR Setup:** Unity XR Interaction Toolkit
 
-Dynamic Scoring: Score calculation is based on the dart's proximity to the target's center upon impact.
+# 3D Model
+* The hand model consists of 5 fingers and a basic palm structure.
+* **Rigging:** The `.blend` file includes a basic armature (rig) to facilitate future animation, though animations have not been implemented yet.
 
-Visual Feedback: Includes particle effects at the point of impact and visual color change on the dartboard when a hit is registered.
+# Texturing Process
+1.  A seamless base texture (tileable) was chosen and scaled up.
+2.  The base texture was imported into **Medibang Paint** for detailed painting.
+3.  **Custom Details Added:**
+    * Lighter coloring on the palm area.
+    * Subtle lines defining the palm creases and finger joint cartilages.
+    * Colored fingernails for visual distinction.
+  
+# More details about model and textures can be seen in the _Modeling&Textures folder (which contains the original files and the final version of the texture)
 
-Infinite Darts: Implemented a respawn mechanism to ensure an endless supply of darts at the player's starting position.
+# Video demo is named Homework3_demo.mp4
 
-Cumulative Score Display: Score is tracked cumulatively, showing the total and the score gained from the last successful hit (e.g., "Score: 73 (+48)").
 
-# Video demo is called Homework2 (demo).mp4
 
-# Changed Scoring Logic!!!
-
-The initial project concept included scoring based on the player's distance from the target. However, I deemed this logic irrelevant and nonsensical in the context of a Darts game, where the challenge should focus on accuracy rather than distance from a static spawning point.
-
-Therefore, the score calculation was fundamentally redesigned to rely solely on the dart's proximity to the target center upon impact, mirroring real-world darts scoring.
-
-(The original script logic, which calculated score based on player distance, has been preserved in Assets/Scripts/TargetScoreOld.cs for historical context, but it is not used in the final build.)
